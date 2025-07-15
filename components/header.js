@@ -5,22 +5,34 @@ export default function Header() {
         <div className="py-6">
             <ul className="flex gap-6">
                 <li>
-                    <Link href="/">Home</Link>
+                    <Link href="/" prefetch={false}>
+                        Home
+                    </Link>
                 </li>
                 <li>
-                    <Link href="/static">Static</Link>
+                    <Link href="/static" prefetch={false}>
+                        Static
+                    </Link>
                 </li>
                 <li>
-                    <Link href="/dynamic">Dynamic</Link>
+                    <Link href="/dynamic" prefetch={false}>
+                        Dynamic
+                    </Link>
                 </li>
                 <li>
-                    <Link href="/hybrid">Hybrid</Link>
+                    <Link href="/hybrid" prefetch={false}>
+                        Hybrid
+                    </Link>
                 </li>
                 <li>
-                    <Link href="/isr/posts">ISR</Link>
+                    <Link href="/isr/posts" prefetch={false}>
+                        ISR
+                    </Link>
                 </li>
                 <li>
-                    <Link href="/rsc">RSC</Link>
+                    <Link href="/rsc" prefetch={false}>
+                        RSC
+                    </Link>
                 </li>
             </ul>
         </div>

@@ -1,4 +1,5 @@
 "use client";
+// server component ekhane import korte parbona
 
 export default function PostCard({ children, postId }) {
     return (
