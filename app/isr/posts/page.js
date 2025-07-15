@@ -3,7 +3,11 @@ import Link from "next/link";
 
 export default async function Posts() {
     // time based revalidation
-    const posts = await getData("http://localhost:8000/posts");
+    const posts = await getData("http://localhost:8000/posts", {
+        next: {
+            revalidate: 10,
+        },
+    });
 
     return (
         <div className="flex flex-col gap-8">
